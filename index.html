@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -217,8 +217,6 @@
                 <div class="team-text">
                   <h3 class="list">Игорь Демьяненко</h3>
                   <p class="master-post">Product Designer</p>
-                </div>
-                <div>
                   <ul class="socials-icons">
                     <li class="list socials-icons-item">
                       <a href="" class="socials-icons-link"
@@ -271,8 +269,6 @@
                 <div class="team-text">
                   <h3 class="list">Ольга Репина</h3>
                   <p class="master-post">Frontend Developer</p>
-                </div>
-                <div>
                   <ul class="socials-icons">
                     <li class="list socials-icons-item">
                       <a href="" class="socials-icons-link"
@@ -325,8 +321,6 @@
                 <div class="team-text">
                   <h3 class="list">Николай Тарасов</h3>
                   <p class="master-post">Marketing</p>
-                </div>
-                <div>
                   <ul class="socials-icons">
                     <li class="list socials-icons-item">
                       <a href="" class="socials-icons-link"
@@ -379,8 +373,6 @@
                 <div class="team-text">
                   <h3 class="list">Михаил Ермаков</h3>
                   <p class="master-post">UI Designer</p>
-                </div>
-                <div>
                   <ul class="socials-icons">
                     <li class="list socials-icons-item">
                       <a href="" class="socials-icons-link"
@@ -589,6 +581,45 @@
             ></use>
           </svg>
         </button>
+        <div class="modal-cover">
+          <p class="modal-top">Оставьте свои данные, мы вам перезвоним</p>
+          <form class="form" autocomplete="on">
+            <div class="form-field">
+              <label for="name" class="form-label">Имя</label>
+              <input class="form-input" type="text" name="name" id="name" />
+            </div>
+
+            <div class="form-field">
+              <label for="tel" class="form-label">Телефон</label>
+              <input class="form-input" type="tel" name="tel" id="tel" />
+            </div>
+
+            <div class="form-field">
+              <label for="mail" class="form-label">Почта</label>
+              <input class="form-input" type="email" name="mail" id="mail" />
+            </div>
+
+            <div class="form-field">
+              <label for="comment" class="form-label">Комментарий</label>
+              <textarea
+                name="comment"
+                id="comment"
+                rows="10"
+                class="form-comment"
+                placeholder="Введите текст"
+              ></textarea>
+            </div>
+
+            <div class="form-field">
+              <input type="checkbox" name="policy" id="policy" />
+              <label for="policy" class="form-label">
+                Соглашаюсь с рассылкой и принимаю Условия договора
+              </label>
+            </div>
+
+            <button type="submit">Отправить</button>
+          </form>
+        </div>
       </div>
     </div>
     <script src="./js/modal.js"></script>
