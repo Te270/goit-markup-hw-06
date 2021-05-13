@@ -608,13 +608,13 @@ footer {
 .footer-content {
   display: flex;
   align-items: baseline;
+  justify-content: space-between;
 }
 
 .footer-socials {
   display: block;
   align-items: center;
   justify-content: left;
-  margin-left: 70px;
 }
 
 .footer-socials-icons {
@@ -670,10 +670,6 @@ footer {
 .address-accent {
   color: var(--white-accent-color);
 }
-.footer-form {
-  margin-left: 93px;
-  
-}
 
 .footer-title {
   font-weight: bold;
@@ -698,9 +694,16 @@ footer {
   height: 50px;
   background-color: inherit;
   border: 1px solid rgba(255, 255, 255, 0.3);
-box-sizing: border-box;
-border-shadow (0px 4px 4px rgba(0, 0, 0, 0.15));
-border-radius: 4px;
+  box-sizing: border-box;
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.25px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-mail input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .footer-icon {
@@ -712,17 +715,17 @@ border-radius: 4px;
 
 .footer-btn {
   width: 200px;
-height: 50px;
-font-weight: bold;
-font-size: 16px;
-line-height: 1.87;
-display: flex;
-align-items: center;
-text-align: center;
-letter-spacing: 0.06em;
-cursor: pointer;
+  height: 50px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  cursor: pointer;
 
-color: #FFFFFF;
+  color: #ffffff;
 }
 
 /* Модальное окно*/
@@ -748,7 +751,7 @@ color: #FFFFFF;
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 100%;
+
   max-width: 528px;
   min-height: 581px;
   transform: translate(-50%, -50%) scale(1);
@@ -817,19 +820,27 @@ color: #FFFFFF;
 
   display: inline-flex;
   fill: rgba(33, 33, 33, 1);
+  transition: fill var(--animation);
 }
 
-.form-input:focus-within > .form-icon {
-  fill: #2196f3;
+.form-input:focus ~ .form-icon {
+  fill: var(--accent-color);
+}
+
+.form-input:focus-within {
+  border: 1px solid #2196f3;
 }
 
 .form-input {
   align-items: center;
   width: 100%;
-  height: 58px;
+  height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
+
   border-radius: 4px;
   padding-left: 42px;
+  outline: none;
+  transition: border var(--animation);
 }
 
 textarea {
@@ -838,13 +849,13 @@ textarea {
 
 .form-comment {
   padding: 12px 16px;
+  min-height: 120px;
 }
 
 .form-field input::placeholder {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
-
   color: rgba(117, 117, 117, 0.5);
 }
 
